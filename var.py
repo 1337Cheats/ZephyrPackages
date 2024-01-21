@@ -5,7 +5,7 @@ def var(var_name, var_value):
 
 with open(__file__, "r") as file:
     file_contents = file.read()
-    lines = file.getlines()
+    lines = file.readlines()
     for line in lines:
         if "var" in line:
             var_name = line.split(" ")[1]
